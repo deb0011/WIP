@@ -33,3 +33,7 @@ https://www.imdb.com/title/{imdb_id}
 
 Poster API
 https://image.tmdb.org/t/p/original/{poster_path}
+
+
+Movie by name
+http://api.themoviedb.org/3/search/movie?api_key=34ff968449f0ae5e6315dfc14a7e6625&query=fight+club
