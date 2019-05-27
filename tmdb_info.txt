@@ -10,7 +10,7 @@ API Read Access Token (v4 auth)
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNGZmOTY4NDQ5ZjBhZTVlNjMxNWRmYzE0YTdlNjYyNSIsInN1YiI6IjVjZWE5Njg4YzNhMzY4MWM0ZTIwZmFkZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tC_VVj4yoKb_DzwlssY4b_cox8xb4TWWN-P9hU5DM10
 
 
-/discover/movie?sort_by=popularity.desc
+https://api.themoviedb.org/3/discover/movie?api_key=34ff968449f0ae5e6315dfc14a7e6625&sort_by=popularity.desc
 
 
 //Working without return type for sync to async call
