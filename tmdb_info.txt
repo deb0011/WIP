@@ -11,3 +11,17 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNGZmOTY4NDQ5ZjBhZTVlNjMxNWRmYzE
 
 
 /discover/movie?sort_by=popularity.desc
+
+
+//Working without return type for sync to async call
+public async Task GetMovie()
+        {
+            var result = await _baseUrl
+            .AppendPathSegment("movie/555")
+            .SetQueryParams(new { api_key = _authToken })
+            //.WithOAuthBearerToken(_authToken)
+            .GetJsonAsync<MovieModel>();
+
+            Console.WriteLine(result.original_title);
+            Console.ReadLine();
+        }
